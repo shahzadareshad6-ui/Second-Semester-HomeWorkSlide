@@ -1,0 +1,35 @@
+package reversanarray;
+public class ReversAnArray {
+
+    public static void main(String[] args) {
+    
+        int[] array = {1,2,3,4,5};
+         int[] result = reverseArray(array);
+        System.out.println("the Original array is");
+         for(int i:array){
+             System.out.print(i+" ");
+         }
+         System.out.println("");
+         System.out.println("the reverse array is");
+        for(int i=0;i<result.length;i++){
+            System.out.print(result[i]+" ");
+        }
+        System.out.println("");
+    }
+    
+    public static int[] reverseArray(int[] arr){
+        int [] newArray = new int[arr.length];
+        
+        int x = arr.length-1;
+        
+        for(int i=0;i<arr.length;i++){
+            
+            newArray[i] = arr[x];
+        x--;
+        
+        }
+        return newArray;
+    }
+
+    
+}
