@@ -1,0 +1,31 @@
+package finding.smallest.element;
+
+public class FindingSmallestElement {
+
+    public static void main(String[] args) {
+        double[] num = {10,21,23,21,1,2,3,2,5,6};
+        
+        int index = indexOfSmallestElement(num);
+        
+        System.out.println("The smallest element in index is "+index);
+    }
+
+    public static int indexOfSmallestElement(double[] array){
+         int index = 0;
+        int min = (int)array[0];
+        for(int i=0;i<array.length;i++){
+            if(array[i]<min){
+            min = (int)array[i];
+                index = i;   
+            
+            }
+        }
+        return index ;
+        
+        
+}       
+    
+    
+
+    
+}
